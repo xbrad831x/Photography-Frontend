@@ -54,8 +54,8 @@ class App extends Component {
           <div className="display-4">
             Follow me on Social Media:
           </div>
-          <img src={require(".//F_Logo_Online_09_2018/Color/PNG/flogo_RGB_HEX-72.png")} />
-          <img style={{height: 72, width:72, marginLeft: 50}} src={require("./GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png")} />
+          <a href="http://www.facebook.com/donnacphotography"><img src={require(".//F_Logo_Online_09_2018/Color/PNG/flogo_RGB_HEX-72.png")} /></a>
+          <a href="http://www.instagram.com/donnachoeun"><img style={{height: 72, width:72, marginLeft: 50}} src={require("./GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png")}/></a>
         </div>
 
       </div>
