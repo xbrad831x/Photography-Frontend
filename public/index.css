@@ -1,18 +1,9 @@
 body, html {
-    height: 100%;
     width: 100%;
+    height: 100%;   
 }
 
-.container {
-    padding-top: 30px
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: 100%
-}
-
-.home_gallery {
-    height: 500px
+.slick-track {
+    margin-right: 1px;
 }
 
