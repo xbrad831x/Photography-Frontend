@@ -8,7 +8,7 @@ export default class Contact extends Component {
             <div style={{alignItems: 'center'}}>
                 <Header />
                 
-                <Form style={{width: '50%', marginLeft: 'auto', marginRight: 'auto'}}>
+                <Form style={{width: '50%', marginLeft: 'auto', marginRight: 'auto', position: 'relative'}}>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl
@@ -24,7 +24,8 @@ export default class Contact extends Component {
                         />
                         <ControlLabel>Message</ControlLabel>
                         <FormControl
-                            
+                            componentClass="textarea"
+                            rows={7}
                         />
                     </FormGroup>
 

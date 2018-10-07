@@ -11,16 +11,16 @@ export default class Investments extends Component {
                 <Grid fluid={true}>
                     <Row>
                         <Col md={3}>
-                            <Image style={{cursor: 'pointer', height: '100%', width: '100%'}} onClick={() => this.props.history.push("/Contact")} src={require("./Senior_Packages.png")}/>
+                            <Image style={{cursor: 'pointer'}} onClick={() => this.props.history.push("/Contact")} src={require("./Senior_Packages.png")} responsive/>
                         </Col>
                         <Col md={3}>
-                            <Image style={{cursor: 'pointer', height: '100%', width: '100%'}} onClick={() => this.props.history.push("/Contact")} src={require("./Event_Packages.png")}/>
+                            <Image style={{cursor: 'pointer'}} onClick={() => this.props.history.push("/Contact")} src={require("./Event_Packages.png")} responsive/>
                         </Col>
                         <Col md={3}>
-                            <Image style={{cursor: 'pointer', height: '100%', width: '100%'}} onClick={() => this.props.history.push("/Contact")} src={require("./Package_Deal.png")}/>
+                            <Image style={{cursor: 'pointer'}} onClick={() => this.props.history.push("/Contact")} src={require("./Package_Deal.png")} responsive/>
                         </Col>
                         <Col md={3}>
-                            <Image style={{cursor: 'pointer', height: '100%', width: '100%'}} onClick={() => this.props.history.push("/Contact")} src={require("./Wedding_Packages.png")}/>
+                            <Image style={{cursor: 'pointer'}} onClick={() => this.props.history.push("/Contact")} src={require("./Wedding_Packages.png")} responsive/>
                         </Col>
                     </Row>
                 </Grid>

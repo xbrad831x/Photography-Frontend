@@ -1,54 +1,52 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col , Nav, Navbar, NavItem, Image} from 'react-bootstrap';
-import { IndexLinkContainer ,LinkContainer } from 'react-router-bootstrap';
+import { Grid, Row, Col ,Image} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
     
+const styleNav = {
+    position: 'relative',
+    width: '100%',
+    border: 2,
+    borderStyle: 'solid',
+    borderColor: '#aadbe6',
+    paddingLeft: 0,
+    paddingRight: 0
+}
+
+const active = {
+    backgroundColor: '#aadbe6',
+    display: 'block'
+}
 
 export default class Header extends Component {
     render() {
         return (
         <div>
             <div>
-                <Image style={{marginLeft: 'auto', marginRight: 'auto'}} src={require("./Logo.png")} responsive/>
+                <Image style={{height: '780px', width: '100%', marginBottom: -240, marginTop: -240 ,marginLeft: 'auto', marginRight: 'auto'}} src={require("./Logo.png")} responsive/>
             </div>
             
-            <Navbar>
-                <Nav style={{width: '100%'}}>
-                    <Grid>
-                    <Row>
+            <Grid style={styleNav}>
+                 <Row style={{textAlign: 'center'}}>
                     <Col md={2}>
-                    <IndexLinkContainer to="/">
-                        <NavItem>Home</NavItem>
-                    </IndexLinkContainer>
+                        <NavLink exact activeStyle={active} to="/">Home</NavLink>
                     </Col>
                     <Col md={2}>
-                    <LinkContainer to="/About">
-                        <NavItem>About</NavItem>
-                    </LinkContainer>
+                        <NavLink activeStyle={active} to="/About">About</NavLink>
                     </Col>
                     <Col md={2}>
-                    <LinkContainer to="/Galleries">
-                        <NavItem>Galleries</NavItem>
-                    </LinkContainer>
+                    <   NavLink activeStyle={active} to="/Galleries">Galleries</NavLink>
                     </Col>
                     <Col md={2}>
-                    <LinkContainer to="/Investments">
-                        <NavItem>Investments</NavItem>
-                    </LinkContainer>
+                        <NavLink activeStyle={active} to="/Investments">Investments</NavLink>
                     </Col>
                     <Col md={2}>
-                    <LinkContainer to="/Contact">
-                        <NavItem>Contact</NavItem>
-                    </LinkContainer>
+                        <NavLink activeStyle={active} to="/Contact">Contact</NavLink>
                     </Col>
                     <Col md={2}>
-                    <LinkContainer to="/Blog">
-                        <NavItem>Blog</NavItem>
-                    </LinkContainer>
+                        <NavLink activeStyle={active} to="/Blog">Blog</NavLink>
                     </Col>
-                    </Row>
-                    </Grid>
-                </Nav>
-            </Navbar>
+                </Row>
+            </Grid>
         </div>
         );
     }

@@ -1,9 +1,13 @@
 body, html {
     width: 100%;
-    height: 100%;   
+    height: 100%;  
 }
 
-.slick-track {
-    margin-right: 1px;
+#root {
+    margin: 0.5in;
+}
+
+.active {
+    background-color: '#aadbe6'
 }
 
