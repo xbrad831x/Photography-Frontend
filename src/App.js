@@ -15,7 +15,7 @@ class App extends Component {
 }
 
 componentDidMount() {
-  axios.get('http://donna-photography-api.herokuapp.com/api/reviews')
+  axios.get('https://donna-photography-api.herokuapp.com/api/reviews')
           .then(response => {
 
               this.setState({reviews: response.data})
@@ -82,18 +82,18 @@ componentDidMount() {
             </Col>
             <Col md={8}>
               <Slider className="review-slider" {...settingsReviews}>
-                {this.state.reviews.map(review => {
-                  return (
-                    <div>
-                      <div className="text-center">
-                        "{review.description}"
-                      </div>
-                      <div className="text-right">
-                        - {review.name}
-                      </div>
-                    </div>
-                  );
-                })}
+                    {this.state.reviews.map(review => {
+                      return (
+                        <div>
+                          <div className="text-center">
+                            "{review.description}"
+                          </div>
+                          <div className="text-right">
+                            - {review.name}
+                          </div>
+                        </div>
+                      );
+                    })}
               </Slider>
             </Col>
             <Col md={2}>
