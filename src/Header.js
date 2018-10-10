@@ -28,22 +28,22 @@ export default class Header extends Component {
             <Grid style={styleNav}>
                  <Row style={{textAlign: 'center'}}>
                     <Col md={2}>
-                        <NavLink exact activeStyle={active} to="/">Home</NavLink>
+                        <NavLink exact activeStyle={active} to="/">HOME</NavLink>
                     </Col>
                     <Col md={2}>
-                        <NavLink activeStyle={active} to="/About">About</NavLink>
+                        <NavLink activeStyle={active} to="/About">ABOUT</NavLink>
                     </Col>
                     <Col md={2}>
-                    <   NavLink activeStyle={active} to="/Galleries">Galleries</NavLink>
+                    <   NavLink activeStyle={active} to="/Galleries">GALLERIES</NavLink>
                     </Col>
                     <Col md={2}>
-                        <NavLink activeStyle={active} to="/Investments">Investments</NavLink>
+                        <NavLink activeStyle={active} to="/Investments">INVESTMENTS</NavLink>
                     </Col>
                     <Col md={2}>
-                        <NavLink activeStyle={active} to="/Contact">Contact</NavLink>
+                        <NavLink activeStyle={active} to="/Contact">CONTACT</NavLink>
                     </Col>
                     <Col md={2}>
-                        <NavLink activeStyle={active} to="/Blog">Blog</NavLink>
+                        <NavLink activeStyle={active} to="/Blog">BLOG</NavLink>
                     </Col>
                 </Row>
             </Grid>

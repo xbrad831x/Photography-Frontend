@@ -86,7 +86,7 @@ componentDidMount() {
                       return (
                         <div>
                           <div className="text-center">
-                            "{review.description}"
+                            "<i>{review.description}</i>"
                           </div>
                           <div className="text-right">
                             - {review.name}
