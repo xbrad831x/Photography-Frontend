@@ -11,3 +11,30 @@ body, html {
     background-color: '#aadbe6'
 }
 
+.review-slider {
+    padding: 10px;
+    border: 2px double #aadbe6
+}
+
+.picture-container {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+
+.picture {
+    height: 300px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.picture:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

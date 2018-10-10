@@ -7,23 +7,31 @@ export default class Galleries extends Component {
         return (
             <div>
                 <Header />
-                <Grid fluid={true}>
+                <Grid fluid={true} style={{marginTop: 10}}>
                     <Row>
-                        <Col md={3}>
-                                <h3>Engagement</h3>
-                                <Image src={require("./Senior_Packages.png")} responsive={true}/>
+                        <Col md={3} style={{textAlign: 'center'}}>
+                            <div className="picture-container">
+                                <Image className="picture" src={require("./engagement.jpg")} responsive={true}/>
+                                <h3 style={{marginTop: 20}}>Engagement</h3>
+                            </div>
                         </Col>
-                        <Col md={3}>
-                                <h3>Couples</h3>
-                                <Image src={require("./Event_Packages.png")} responsive={true}/>
+                        <Col md={3} style={{textAlign: 'center'}}>
+                            <div className="picture-container">
+                                <Image className="picture" src={require("./couples.jpg")} responsive={true}/>
+                                <h3 style={{marginTop: 20}}>Couples</h3>
+                            </div>
                         </Col>
-                        <Col md={3}>
-                                <h3>Seniors</h3>
-                                <Image src={require("./Package_Deal.png")} responsive={true}/>
+                        <Col md={3} style={{textAlign: 'center'}}>
+                            <div className="picture-container">
+                                <Image className="picture" src={require("./senior.jpg")} responsive={true}/>
+                                <h3 style={{marginTop: 20}}>Seniors</h3>
+                            </div>
                         </Col>
-                        <Col md={3}>
-                                <h3>Family</h3>
-                                <Image src={require("./Wedding_Packages.png")} responsive={true}/>
+                        <Col md={3} style={{textAlign: 'center'}}>
+                            <div className="picture-container">
+                                <Image className="picture" src={require("./family.jpg")} responsive={true}/>
+                                <h3 style={{marginTop: 20}}>Family</h3>
+                            </div>
                         </Col>
                     </Row>
                 </Grid>
