@@ -12,25 +12,25 @@ export default class Galleries extends Component {
                         <Col md={3} style={{textAlign: 'center'}}>
                             <div className="picture-container">
                                 <Image className="picture" src={require("./engagement.jpg")} responsive={true}/>
-                                <h3 style={{marginTop: 20}}>Engagement</h3>
+                                <h3>Engagement</h3>
                             </div>
                         </Col>
                         <Col md={3} style={{textAlign: 'center'}}>
                             <div className="picture-container">
                                 <Image className="picture" src={require("./couples.jpg")} responsive={true}/>
-                                <h3 style={{marginTop: 20}}>Couples</h3>
+                                <h3>Couples</h3>
                             </div>
                         </Col>
                         <Col md={3} style={{textAlign: 'center'}}>
                             <div className="picture-container">
                                 <Image className="picture" src={require("./senior.jpg")} responsive={true}/>
-                                <h3 style={{marginTop: 20}}>Seniors</h3>
+                                <h3>Seniors</h3>
                             </div>
                         </Col>
                         <Col md={3} style={{textAlign: 'center'}}>
                             <div className="picture-container">
                                 <Image className="picture" src={require("./family.jpg")} responsive={true}/>
-                                <h3 style={{marginTop: 20}}>Family</h3>
+                                <h3>Family</h3>
                             </div>
                         </Col>
                     </Row>
