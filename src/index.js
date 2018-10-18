@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Galleries from './Galleries';
-import Investments from './Investments';
+import Gallery from './Gallery';
+import Investment from './Investment';
 import Contact from './Contact';
 import Blog from './Blog';
 import About from './About';
+import Review from './Reviews'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -14,9 +15,10 @@ ReactDOM.render((
     <Switch>
         <Route path="/Blog" component={Blog}/>
         <Route path="/Contact" component={Contact}/>
-        <Route path="/Investments" component={Investments}/>
-        <Route path="/Galleries" component={Galleries}/>
+        <Route path="/Investments/:investment" component={Investment}/>
+        <Route path="/Galleries/:gallery" component={Gallery}/>
         <Route path="/About" component={About}/>
+        <Route path="/Reviews" component={Review} />
         <Route exact path="/" component={App} />
     </Switch>
 </Router>

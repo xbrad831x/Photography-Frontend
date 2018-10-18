@@ -42,7 +42,7 @@ export default class Blog extends Component {
                                 <CardActionArea style={{marginLeft: 'auto', marginRight: 'auto'}}>
                                     <CardMedia 
                                         component='img'
-                                        image={require('./cat1.jpg')}
+                                        image={require('./pictures/cat1.jpg')}
                                     />
                                 </CardActionArea>
                                 <CardContent style={{textAlign: 'center'}}>
@@ -61,7 +61,7 @@ export default class Blog extends Component {
                                 <CardActionArea style={{marginLeft: 'auto', marginRight: 'auto'}}>
                                     <CardMedia 
                                         component='img'
-                                        image={require('./cat1.jpg')}
+                                        image={require('./pictures/cat1.jpg')}
                                     />
                                 </CardActionArea>
                                 <CardContent style={{textAlign: 'center'}}>
@@ -80,7 +80,7 @@ export default class Blog extends Component {
                                 <CardActionArea style={{marginLeft: 'auto', marginRight: 'auto'}}>
                                     <CardMedia 
                                         component='img'
-                                        image={require('./cat1.jpg')}
+                                        image={require('./pictures/cat1.jpg')}
                                     />
                                 </CardActionArea>
                                 <CardContent style={{textAlign: 'center'}}>
