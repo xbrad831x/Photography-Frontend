@@ -23,6 +23,16 @@ export default class Review extends Component {
 
     render() {
 
+        const settingsPictures = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+          }
+
         if(this.state.reviews && this.state.reviews.length == 0)
         {
             return (
@@ -42,23 +52,25 @@ export default class Review extends Component {
                 <div className="background-container">
                     
                 <h1 className="stella-font text-center">reviews</h1>
-                    {this.state.reviews.map(review => {
-                        return (
-                            <div style={{height: 400}}>
-                                <Image src={review.image_url} 
-                                        style={{   float: 'left', maxHeight: '100%', 
-                                                    marginRight: 20, position: 'relative',
-                                                    borderStyle: 'solid', borderColor: 'black', borderWidth: '2px'}} 
-                                                    responsive={true}/>
-                                <p style={{fontSize: 20, wordWrap: 'break-word', margin: 20}}>
-                                    <b>"</b>{review.description}<b>"</b>
-                                </p>
-                                <div style={{fontSize: 20}} className="pull-right">
-                                -{review.name}
+                    <Slider {...settingsPictures}>
+                        {this.state.reviews.map(review => {
+                            return (
+                                <div>
+                                    <Image src={review.image_url} 
+                                            style={{   float: 'left', height: 400,
+                                                        marginRight: 20, position: 'relative',
+                                                        borderStyle: 'solid', borderColor: 'black', borderWidth: '2px'}} 
+                                                        responsive={true}/>
+                                    <p style={{fontSize: 20, wordWrap: 'break-word', margin: 20}}>
+                                        <b>"</b>{review.description}<b>"</b>
+                                    </p>
+                                    <div style={{fontSize: 20}} className="pull-right">
+                                    -{review.name}
+                                    </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </Slider>
                 </div>
 
             </div>
