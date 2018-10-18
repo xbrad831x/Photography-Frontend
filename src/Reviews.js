@@ -4,21 +4,17 @@ import { Image } from 'react-bootstrap';
 import axios from 'axios';
 import Slider from 'react-slick';
 
-const r = {
-    "id": 4,
-    "name": "Imee",
-    "description": "Donna is an amazing person to work with! She made our session so light and fun and she allowed us to give our own input as well! Definitely recommend her to do your sessions! 🤗",
-    "image_url": "https://az415828.vo.msecnd.net/pictures/8/963/8963717/lowres/322142163.jpg",
-    "created_at": "2018-10-10T15:44:02.978661Z"
-    }
-
 export default class Review extends Component {
 
-    state = {
-        reviews: []
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            reviews: []
+        }
     }
 
-    ComponetDidMount() {
+    componentDidMount() {
         axios.get('https://donna-photography-api.herokuapp.com/api/reviews')
             .then(res => {
                 this.setState({reviews: res.data})
@@ -27,7 +23,7 @@ export default class Review extends Component {
 
     render() {
 
-        if(this.state.reviews.length == 0)
+        if(this.state.reviews && this.state.reviews.length == 0)
         {
             return (
                 <div>
