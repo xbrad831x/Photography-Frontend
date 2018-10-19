@@ -76,11 +76,11 @@ export default class Header extends Component {
                                         INVESTMENT
                                         </DropdownToggle>
                                         <DropdownMenu persist={true} className="menu-container">
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/HEADSHOTS">HEADSHOTS PRICE</NavLink></div>
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/SENIORS">SENIORS PRICE</NavLink></div>
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/EVENTS">EVENTS PRICE</NavLink></div>
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/PORTRAITS">PORTRAIT/COUPLES/<br />MATERNITY/FAMILY PRICE</NavLink></div>
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/WEDDINGS">WEDDINGS PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Headshots">HEADSHOTS PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Seniors">SENIORS PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Events">EVENTS PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Portraits">PORTRAIT/COUPLES/<br />MATERNITY/FAMILY PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Weddings">WEDDINGS PRICE</NavLink></div>
                                         </DropdownMenu>
                                      </Dropdown>
                                     </div>
