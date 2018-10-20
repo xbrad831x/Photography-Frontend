@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Slider from 'react-slick';
+import Footer from './Footer';
 
 export default class Gallery extends Component {
 
@@ -37,11 +38,16 @@ export default class Gallery extends Component {
                 <Header />
                 <div className="background-container">
                 <Slider {...settingsPictures} ref={slider => (this.slider = slider)}>
-                    <img src={require("./pictures/home_pic_2.jpg")} />
-                    <img src={require("./pictures/home_pic_1.jpg")} />
                 </Slider>
+                <div className="text-center arrow-container">
+                    <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 50}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
+                    <img style={{height: 50, width: 50, cursor: 'pointer'}} src={require("./pictures/right_arrow.png")}  onClick={this.next}/>
                 </div>
-                <h1>{this.props.match.params.gallery}</h1>
+                </div>
+                
+                <Footer />
+
+
             </div>
         );
     }

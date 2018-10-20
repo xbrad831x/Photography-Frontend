@@ -30,7 +30,7 @@ export default class Header extends Component {
 
     render() {
         return (
-        <div style={{marginTop: -40, marginBottom: -20}}>
+        <div className="nav-container">
             <Grid fluid={true} >
                  <Row style={{textAlign: 'center', marginTop: 20}}>
                     <Col md={3}>

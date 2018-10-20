@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Header from './Header';
+import Footer from './Footer';
 class App extends Component {
 
   constructor(props) {
@@ -35,15 +36,15 @@ class App extends Component {
 
         <div className="background-container">
            <Slider {...settingsPictures} ref={slider => (this.slider = slider)}>
-              <img src={require("./pictures/home_pic_2.jpg")} />
-              <img src={require("./pictures/home_pic_1.jpg")} />
           </Slider>
-          <div style={{marginTop: 20, marginBottom: 20}} className="text-center">
+          <div className="text-center arrow-container">
             <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 50}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
             <img style={{height: 50, width: 50, cursor: 'pointer'}} src={require("./pictures/right_arrow.png")}  onClick={this.next}/>
           </div>
         </div>
-        <h3 className="text-center">DONNA CHOEUN PHOTOGRAPHY</h3>
+        
+        <Footer />
+
       </div>
 
     );

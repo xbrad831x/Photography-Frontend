@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import { Button, Form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap'
+import { Button, Form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
+import Footer from './Footer';
 
 export default class Contact extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class Contact extends Component {
 
                 <div className="background-container" style={{alignItems: 'center'}}>
                     
-                    <Form style={{width: '50%', marginLeft: 'auto', marginRight: 'auto', position: 'relative'}}>
+                    <Form className="contact-container">
                         <FormGroup>
                             <ControlLabel>Name:</ControlLabel>
                             <FormControl
@@ -35,6 +36,8 @@ export default class Contact extends Component {
                         <Button type="submit">Submit</Button>
                     </Form>
                 </div>
+
+                <Footer />
 
             </div>
         );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Slider from 'react-slick';
+import Footer from './Footer';
 
 let Headshots = () => (
     <div className="text-center">
@@ -24,46 +25,52 @@ let Seniors = () => (
 );
 
 let Events = () => (
-    <Grid>
-        <Row>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package One</b></div>
-                    <br />
-                    <div>Event Coverage</div>
-                    <div>1-2 hour(s)</div>
-                    <div>Online Gallery</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <div><b>$400</b></div>
-                </div>
-            </Col>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package Two</b></div>
-                    <br />
-                    <div>Event Coverage</div>
-                    <div>3-4 hour(s)</div>
-                    <div>Online Gallery</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <div><b>$500</b></div>
-                </div>
-            </Col>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package Three</b></div>
-                    <br />
-                    <div>Event Coverage</div>
-                    <div>5-6 hour(s)</div>
-                    <div>Online Gallery</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <div><b>$600</b></div>
-                </div>
-            </Col>
-        </Row>
-    </Grid>
+    <div>
+        <Grid>
+            <Row>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package One</b></div>
+                        <br />
+                        <div>Event Coverage</div>
+                        <div>1-2 hour(s)</div>
+                        <div>Online Gallery</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <div><b>$400</b></div>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package Two</b></div>
+                        <br />
+                        <div>Event Coverage</div>
+                        <div>3-4 hour(s)</div>
+                        <div>Online Gallery</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <div><b>$500</b></div>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package Three</b></div>
+                        <br />
+                        <div>Event Coverage</div>
+                        <div>5-6 hour(s)</div>
+                        <div>Online Gallery</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <div><b>$600</b></div>
+                    </div>
+                </Col>
+            </Row>
+        </Grid>
+        <br />
+        <br />
+        <h5><b>*QUANTITY OF DIGITAL IMAGES VARY PER EVENT | PRICE VARIES PER TRAVEL*</b></h5>
+    </div>
+
 );
 
 let Portraits = () => (
@@ -113,52 +120,57 @@ let Portraits = () => (
 );
 
 let Weddings = () => (
-    <Grid>
-        <Row>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package One</b></div>
-                    <br />
-                    <div>Ceremony Coverage &</div>
-                    <div>Portraits</div>
-                    <div>60 Digital Images</div>
-                    <div>(minimum)</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <br />
-                    <div><b>$600</b></div>
-                </div>
-            </Col>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package Two</b></div>
-                    <br />
-                    <div>Pre-Wedding Coverage &</div>
-                    <div>Ceremony Coverage &</div>
-                    <div>Portraits</div>
-                    <div>75 Digital Images</div>
-                    <div>(minimum)</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <div><b>$750</b></div>
-                </div>
-            </Col>
-            <Col md={4}>
-                <div className="text-center">
-                    <div><b>Package Three</b></div>
-                    <br />
-                    <div>ALL DAY COVERAGE</div>
-                    <div>All Digital Images</div>
-                    <div>1 Photographer</div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <div><b>$1200</b></div>
-                </div>
-            </Col>
-        </Row>
-    </Grid>
+    <div>
+        <Grid>
+            <Row>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package One</b></div>
+                        <br />
+                        <div>Ceremony Coverage &</div>
+                        <div>Portraits</div>
+                        <div>60 Digital Images</div>
+                        <div>(minimum)</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <br />
+                        <div><b>$600</b></div>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package Two</b></div>
+                        <br />
+                        <div>Pre-Wedding Coverage &</div>
+                        <div>Ceremony Coverage &</div>
+                        <div>Portraits</div>
+                        <div>75 Digital Images</div>
+                        <div>(minimum)</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <div><b>$750</b></div>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div className="text-center">
+                        <div><b>Package Three</b></div>
+                        <br />
+                        <div>ALL DAY COVERAGE</div>
+                        <div>All Digital Images</div>
+                        <div>1 Photographer</div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div><b>$1200</b></div>
+                    </div>
+                </Col>
+            </Row>
+        </Grid>
+        <br />
+        <br />
+        <h5><b>*ALL PACKAGES INCLUDE ONLINE GALLERY + PRICE VARIES FOR TRAVEL*</b></h5>
+    </div>
 );
 
 
@@ -196,8 +208,10 @@ export default class Investments extends Component {
                 <h4>{this.props.match.params.investment.toUpperCase()}</h4>
                 <br />
                 <br />
-                {this.renderInvestment()}
+                <div className="investment-container">{this.renderInvestment()}</div>
             </div>
+            
+            <Footer />
 
             </div>
         );
