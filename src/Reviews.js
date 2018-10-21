@@ -40,7 +40,12 @@ export default class Review extends Component {
                 <div>
                     <Header />
 
-                    <div className="background-container">Loading...</div>
+                    <div className="background-container">
+                    <h1 className="stella-font text-center">reviews</h1>
+                    <div>Loading...</div>
+                    </div>
+
+                    <Footer />
                 </div>
             )
         }

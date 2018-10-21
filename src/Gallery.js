@@ -46,14 +46,24 @@ export default class Gallery extends Component {
             slide: 'img'
           }
 
-        if(this.state.galleries.length < 1)
+        if(this.state.galleries.length == 0)
         {
-            return <div>Loading...</div>
+            return (
+                <div>
+                    <Header />
+                    <div className="background-container">
+                    <h1 className="stella-font text-center">{this.props.match.params.gallery.toLowerCase()}</h1>
+                    <div>Loading...</div>
+                    </div>
+                    <Footer />
+
+                </div>
+
+            );
         }
 
         return (
             <div>
-                <Header />
                 <div className="background-container">
                 <h1 className="stella-font text-center">{this.props.match.params.gallery.toLowerCase()}</h1>
                 <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
