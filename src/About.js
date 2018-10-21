@@ -22,11 +22,19 @@ export default class About extends Component {
                             </Col>
                             <Col md={8}>
                                 <p className="about-container">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis elementum est ac consequat. Nunc pulvinar enim velit, quis finibus erat aliquet ut. Curabitur posuere dolor ac nulla fermentum, eu ultrices quam elementum. Vestibulum a pellentesque dolor. Ut eros ex, laoreet non urna et, posuere pulvinar quam. Duis sit amet auctor erat. Morbi in lorem enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse non leo tincidunt, ullamcorper velit in, scelerisque nibh. Praesent cursus arcu ut condimentum commodo. Praesent enim velit, feugiat vel nunc eget, eleifend malesuada nunc. Nunc lobortis elementum eros, consectetur pulvinar metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                {`
+                                Thanks for visiting my site! I am a photographer in Stockton, California. I grew up in Stockton, but went to college in Chico at California State University Chico.
 
-                Nulla sed nunc massa. Etiam a efficitur turpis. Curabitur commodo pellentesque tellus, euismod bibendum leo tincidunt quis. Aliquam nec ligula pulvinar, finibus ipsum id, tristique sapien. Fusce varius in quam et ultrices. Sed non ante eget velit porta commodo et in velit. Donec in varius nisl. Duis finibus fermentum sapien in malesuada. Quisque non magna placerat, varius nulla id, interdum sapien. Maecenas non urna maximus, ullamcorper nulla a, mollis urna. Nunc mollis, erat rutrum aliquet porttitor, odio metus ullamcorper eros, non elementum magna metus et odio. Phasellus nec quam quis est vulputate fermentum id id orci. Phasellus in elit ac orci interdum semper ut in nulla. Nam at porttitor arcu, et suscipit neque.
-                                 <br />
-                                <NavLink exact to="/Contact">Contact me</NavLink>
+                                My vision to come back to Stockton was to help make a change in those who serve & live in this community. I believe you are not a product of your environment. So I am here to showcase the beauty Stockton has to offer through the photography that I do!
+
+                                I am also available for travel if you are not in this area. 
+
+                                My passion for photography began when my parents bought me my first polaroid camera back in the third grade. I would also take it everywhere with me capturing fieldtrips, family, pets and all things around me. I love the joy it brought me in capturing moments to relive over & over again.
+
+                                I am a natural light photographer. I enjoy capturing the love between couples & families. It is my goal to make you feel happy & comfortable during your session.  
+                                `}<br />
+                                <br />
+                                <div><NavLink exact to="/Contact">Contact me</NavLink> for your next photo session!</div>
                                 </p>
                             </Col>
                         </Row>
