@@ -16,7 +16,7 @@ export default class Review extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/reviews')
+        axios.get('https://donna-photography-api.herokuapp.com/api/reviews')
             .then(res => {
                 this.setState({reviews: res.data})
             })
