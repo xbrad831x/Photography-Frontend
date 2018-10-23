@@ -37,10 +37,25 @@ h4 {
     margin: 0px 20px 20px 20px;
 }
 
+.logo-pic {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nav-container {
     font-family: 'CenturyGothic';
     margin-bottom: -20px;
-    margin-top: -40px;
+}
+
+.nav-middle {
+    height: 50px; 
+    margin-top: 70px; 
+    border-right-style: solid;
+    border-right-color: lightgray;
+    border-right-width: 2px;
+    border-left-style: solid;
+    border-left-color: lightgray;
+    border-left-width: 2px
 }
 
 .footer-container {
@@ -137,7 +152,7 @@ h4 {
     border-bottom-color: black;
     border-bottom-width: 2px;
     padding: 20px;
-    margin-top: -70px;
+    margin-top: 20px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

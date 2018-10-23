@@ -33,11 +33,10 @@ export default class Header extends Component {
         <div className="nav-container">
             <Grid fluid={true} >
                  <Row style={{textAlign: 'center', marginTop: 20}}>
-                    <Col md={3}>
-                        <Image style={{height: 240, width: 600, marginLeft: 'auto', marginRight: 'auto'}} src={require("./pictures/Logo.png")} responsive/>
+                    <Col md={2}>
+                        <Image className="logo-pic" src={require("./pictures/Simplest_Logo.png")} responsive/>
                     </Col>
-                    <Col md={6} style={{height: 50, marginTop: 70, borderRightStyle: 'solid', borderRightColor: 'lightgray', borderRightWidth: '2px', 
-                                        borderLeftStyle: 'solid', borderLeftColor: 'lightgray', borderLeftWidth: '2px'}}>
+                    <Col md={8} className="nav-middle">
                         <div style={{height: '100%', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <div className="container">
                                 <div className="row seven-cols" style={{fontSize: 12}}>
@@ -90,8 +89,8 @@ export default class Header extends Component {
                             </div>
                         </div>
                     </Col>
-                    <Col md={3} style={{height: 140, marginTop: 25}}>
-                        <div style={{height: '100%', display: 'flex', alignItems: 'center', fontSize: 12 }}>
+                    <Col md={2} style={{height: 140, marginTop: 25}}>
+                        <div style={{height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 12 }}>
                             FOLLOW ALONG
                             <a target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/donnacphotography"><img style={{height: 20, width:20, marginLeft: 10}} src={require("./F_Logo_Online_09_2018/Black/PNG/flogo-RGB-HEX-Blk-58.png")} /></a>
                             <a target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/donnachoeun"><img style={{height: 20, width:20, marginLeft: 10}} src={require("./GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png")}/></a>

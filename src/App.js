@@ -41,7 +41,8 @@ componentDidMount() {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      slide: 'img'
+      slide: 'img',
+      variableWidth: true
     }
 
     if(this.state.homepics.length == 0)
