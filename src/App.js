@@ -72,7 +72,7 @@ componentDidMount() {
                     })}
           </Slider>
           <div className="text-center arrow-container">
-            <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 50}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
+            <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 10}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
             <img style={{height: 50, width: 50, cursor: 'pointer'}} src={require("./pictures/right_arrow.png")}  onClick={this.next}/>
           </div>
         </div>
