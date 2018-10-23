@@ -6,7 +6,8 @@ import Investment from './Investment';
 import Contact from './Contact';
 import Blog from './Blog';
 import About from './About';
-import Review from './Reviews'
+import Review from './Reviews';
+import BlogDetail from './blogdetail';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -14,6 +15,7 @@ ReactDOM.render((
 <Router>
     <Switch>
         <Route path="/Blog" component={Blog}/>
+        <Route path="/Blogs/:id" component={BlogDetail} />
         <Route path="/Contact" component={Contact}/>
         <Route path="/Investments/:investment" component={Investment}/>
         <Route path="/Galleries/:gallery" component={Gallery}/>

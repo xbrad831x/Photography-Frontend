@@ -59,6 +59,8 @@ export default class Contact extends Component {
                 <Header />
 
                 <div className="background-container" style={{alignItems: 'center'}}>
+
+                <h1 className="stella-font text-center">contact</h1>
                     
                     <Form onSubmit={this.handleSubmit} className="contact-container">
                         <FormGroup>
