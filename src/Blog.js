@@ -45,6 +45,8 @@ export default class Blog extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: false,
+            rows: 3,
+            slidesPerRow: 1
           }
 
           if(this.state.blogs.length == 0)

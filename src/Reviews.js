@@ -32,8 +32,6 @@ export default class Review extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            rows: 3,
-            slidesPerRow: 1
           }
 
         if(this.state.reviews && this.state.reviews.length == 0)
