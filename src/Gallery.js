@@ -40,10 +40,9 @@ export default class Gallery extends Component {
             infinite: true,
             speed: 500,
             arrows: false,
-            slidesToShow: 4,
+            slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
-            slide: 'img'
+            autoplay: false,
           }
 
         if(this.state.galleries.length == 0)
@@ -72,15 +71,11 @@ export default class Gallery extends Component {
                         if(this.props.match.params.gallery.toLowerCase() == gallery.gallery)
                         {
                             return (
-                                <img className="pic-gallery" src={gallery.image_url} />
+                                <img src={gallery.image_url} />
                             );
                         }
                     })}
                 </Slider>
-                <div className="text-center arrow-container">
-                    <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 10}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
-                    <img style={{height: 50, width: 50, cursor: 'pointer'}} src={require("./pictures/right_arrow.png")}  onClick={this.next}/>
-                </div>
                 </div>
                 
                 <Footer />

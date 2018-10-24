@@ -37,7 +37,7 @@ export default class Header extends Component {
                         <Image className="logo-pic" src={require("./pictures/Simplest_Logo.png")} responsive/>
                     </Col>
                     <Col md={8} className="nav-middle">
-                        <div style={{height: '140px', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <div className="container">
                                 <div className="row seven-cols" style={{fontSize: 12}}>
                                     <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1"><NavLink exact style={{color: 'black'}} to="/">HOME</NavLink></div>
@@ -89,7 +89,7 @@ export default class Header extends Component {
                             </div>
                         </div>
                     </Col>
-                    <Col md={2} style={{height: 140, marginTop: 25}}>
+                    <Col md={2}>
                         <div style={{height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 12 }}>
                             FOLLOW ALONG
                             <a target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/donnacphotography"><img style={{height: 20, width:20, marginLeft: 10}} src={require("./F_Logo_Online_09_2018/Black/PNG/flogo-RGB-HEX-Blk-58.png")} /></a>
