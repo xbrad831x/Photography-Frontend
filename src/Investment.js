@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 
 let Headshots = () => (

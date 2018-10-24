@@ -71,8 +71,7 @@ h4 {
 }
 
 .gallery-slider-container {
-    margin-left: 200px;
-    margin-right: 200px;
+    
 }
 
 .pic-review-container {
@@ -84,13 +83,10 @@ h4 {
 
 .blog-pic-container {
     position: relative;
-    background-color: white; 
-    margin-right: 10px;
+    background-color: white;
 }
 
 .blog-title {
-    top: 70%;
-    left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -98,8 +94,6 @@ h4 {
 }
 
 .blog-category {
-    top: 80%;
-    left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 90%;

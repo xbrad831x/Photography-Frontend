@@ -17,7 +17,7 @@ export default class Blog extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://donna-photography-api.herokuapp.com/api/blogs')
+        axios.get('http://localhost:8000/api/blogs')
                 .then(response => {
 
                     this.setState({blogs: response.data})
@@ -42,7 +42,7 @@ export default class Blog extends Component {
             infinite: true,
             speed: 500,
             arrows: false,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
           }
