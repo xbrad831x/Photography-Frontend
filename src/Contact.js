@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import { Button, Form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
+import { Button, Form, FormControl, FormGroup, ControlLabel, Grid, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import axios from 'axios';
 
@@ -61,35 +61,44 @@ export default class Contact extends Component {
                 <div className="background-container" style={{alignItems: 'center'}}>
 
                 <h1 className="stella-font text-center">contact</h1>
-                    
-                    <Form onSubmit={this.handleSubmit} className="contact-container">
-                        <FormGroup>
-                            <ControlLabel>Name:</ControlLabel>
-                            <FormControl
-                                onChange={this.onChangeName}
-                                value={this.state.name}
-                            />
-                            <ControlLabel>Email:</ControlLabel>
-                            <FormControl
-                                onChange={this.onChangeEmail}
-                                value={this.state.email}
-                            />
-                            <ControlLabel>How did you hear about me:</ControlLabel>
-                            <FormControl
-                                onChange={this.onChangeHowDidYouHear}
-                                value={this.state.howdidyouhear}
-                            />
-                            <ControlLabel>Comment:</ControlLabel>
-                            <FormControl
-                                componentClass="textarea"
-                                rows={7}
-                                onChange={this.onChangeComment}
-                                value={this.state.comment}
-                            />
-                        </FormGroup>
 
-                        <Button type="submit">Submit</Button>
-                    </Form>
+                <Grid>
+                    <Row>
+                        <Col md={6}>
+                            <img style={{width: '100%', float: 'right'}} src={require('./pictures/contact_pic.jpg')} />
+                        </Col>
+                        <Col md={6}>
+                        <Form onSubmit={this.handleSubmit} className="contact-container">
+                            <FormGroup>
+                                <ControlLabel>Name:</ControlLabel>
+                                <FormControl
+                                    onChange={this.onChangeName}
+                                    value={this.state.name}
+                                />
+                                <ControlLabel>Email:</ControlLabel>
+                                <FormControl
+                                    onChange={this.onChangeEmail}
+                                    value={this.state.email}
+                                />
+                                <ControlLabel>How did you hear about me:</ControlLabel>
+                                <FormControl
+                                    onChange={this.onChangeHowDidYouHear}
+                                    value={this.state.howdidyouhear}
+                                />
+                                <ControlLabel>Comment:</ControlLabel>
+                                <FormControl
+                                    componentClass="textarea"
+                                    rows={7}
+                                    onChange={this.onChangeComment}
+                                    value={this.state.comment}
+                                />
+                            </FormGroup>
+
+                            <Button type="submit">Submit</Button>
+                        </Form>
+                        </Col>
+                    </Row>
+                </Grid>
                 </div>
 
                 <Footer />

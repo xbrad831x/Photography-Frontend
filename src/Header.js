@@ -78,7 +78,7 @@ export default class Header extends Component {
                                                 <div><NavLink exact style={{color: 'black'}} to="/Investments/Headshots">HEADSHOT PRICE</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/Investments/Seniors">SENIOR PRICE</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/Investments/Events">EVENT PRICE</NavLink></div>
-                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Portraits">PORTRAIT/COUPLES/<br />MATERNITY/FAMILY PRICE</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/Investments/Portraits">PORTRAIT/COUPLE/<br />MATERNITY/FAMILY PRICE</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/Investments/Weddings">WEDDING PRICE</NavLink></div>
                                         </DropdownMenu>
                                      </Dropdown>

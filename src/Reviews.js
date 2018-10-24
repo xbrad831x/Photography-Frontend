@@ -27,6 +27,7 @@ export default class Review extends Component {
         const settingsPictures = {
             dots: false,
             infinite: true,
+            autoplaySpeed: 5000,
             speed: 500,
             arrows: false,
             slidesToShow: 1,
