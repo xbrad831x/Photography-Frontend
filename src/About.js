@@ -16,8 +16,7 @@ export default class About extends Component {
                             <Col md={4}>
                                 <Image src={require("./pictures/About_pic.jpg")} 
                                         style={{   float: 'left', 
-                                                margin: 20, position: 'relative',
-                                                borderStyle: 'solid', borderColor: 'black', borderWidth: '2px'}} 
+                                                margin: 20, position: 'relative'}} 
                                         responsive={true}/>
                             </Col>
                             <Col md={8}>
