@@ -43,7 +43,7 @@ export default class Gallery extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            pauseOnHover: false;
+            pauseOnHover: false
           }
 
         if(this.state.galleries.length == 0)
