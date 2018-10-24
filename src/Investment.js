@@ -7,8 +7,9 @@ let Headshots = () => (
     <div className="text-center">
         <div>1-3 Digital Images</div>
         <div>Online Gallery</div>
-        <div>$10/Person</div>
-        <div>*For Businesses*</div>
+        <div><b>$25</b>/Person</div>
+        <br />
+        <div><i>*For Businesses*</i></div>
     </div>
 );
 
