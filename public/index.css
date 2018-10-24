@@ -80,9 +80,6 @@ h4 {
     height: 400px;
     margin-right: 20px; 
     position: relative;
-    border-style: solid;
-    border-color: black; 
-    border-width: 2px;
 }
 
 .blog-pic-container {
