@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     background-image: url(./pictures/gray.jpg);
     background-size: 100% 100%;
+    font-size: 15px !important;
 }
 
 @font-face {
@@ -28,12 +29,10 @@ h4 {
 
 .investment-container {
     font-family: 'CenturyGothic';
-    font-size: 25px;
 }
 
 .about-container {
     font-family: 'CenturyGothic';
-    font-size: 20px;
     white-space: pre-line;
     margin: 0px 20px 20px 20px;
 }
@@ -60,7 +59,6 @@ h4 {
 .footer-container {
     font-family: 'CenturyGothic';
     margin-top: 20px;
-    font-size: 12px;
 }
 
 .arrow-container {
@@ -98,7 +96,6 @@ h4 {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 25px;
     width: 90%;
     font-family: CenturyGothic;
 }
@@ -108,18 +105,12 @@ h4 {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 25px;
     width: 90%;
     font-family: CenturyGothic;
 }
 
 .blog-image-container {
     padding: 10px;
-}
-
-.pic-gallery {
-    height: 400px;
-    width: 400px;
 }
 
 .pic-blog {
@@ -130,7 +121,6 @@ h4 {
 
 .stella-font {
     font-family: 'StellaWilson';
-    font-size: 70px
 }
 
 .gallery {
