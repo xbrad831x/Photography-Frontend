@@ -32,6 +32,8 @@ export default class Review extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
+            rows: 3,
+            slidesPerRow: 1
           }
 
         if(this.state.reviews && this.state.reviews.length == 0)
@@ -71,10 +73,10 @@ export default class Review extends Component {
                                     <div>
                                         <img src={review.image_url} className="pic-review-container" />
                                         <div>
-                                            <div>
+                                            <div style={{fontSize: 15}}>
                                                 <b>"</b>{review.description}<b>"</b>
                                             </div>
-                                            <div style={{marginBottom: 0}} className="pull-right">
+                                            <div style={{fontSize: 20, marginBottom: 0}} className="pull-right">
                                             -{review.name}
                                             </div>
                                         </div>

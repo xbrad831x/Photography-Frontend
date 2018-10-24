@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import Slider from 'react-slick';
 import Footer from './Footer';
 
 let Headshots = () => (
