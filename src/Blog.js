@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import { Button, Grid, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import Footer from './Footer';
 import Slider from 'react-slick';
+import { NavLink } from 'react-router-dom';
 
 export default class Blog extends Component {
 
@@ -17,7 +19,7 @@ export default class Blog extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/blogs')
+        axios.get('https://donna-photography-api.herokuapp.com/api/blogs')
                 .then(response => {
 
                     this.setState({blogs: response.data})
@@ -68,26 +70,46 @@ export default class Blog extends Component {
                 
                 <div className="background-container">
                 <h1 className="stella-font text-center">blog</h1>
-                <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
-                            {this.state.blogs.map(blog => {
-                                return (
-                                    <div>
-                                        <div className="blog-pic-container text-center">
-                                            <h2 className="blog-title"><b>{blog.title.toUpperCase()}</b></h2>
-                                            <h2 className="blog-category"><b>{blog.category.toUpperCase()}</b></h2>
-                                            <div className="blog-image-container">
-                                                <img className="pic-blog" src={blog.image_url} />
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                </Slider>
+                <Grid>
+                    <Row>
+                        <Col md={1}>
+                        </Col>
+                        <Col md={10}>
+                            <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
+                                        {this.state.blogs.map(blog => {
+                                            return (
+                                                <div>
+                                                    <div className="blog-pic-container text-center">
+                                                        <Grid style={{width: '100%'}}>
+                                                            <Row>
+                                                                <Col md={4}>
+                                                                    <div className="blog-image-container">
+                                                                        <img className="pic-blog" src={blog.image_url} />
+                                                                    </div>
+                                                                </Col>
+                                                                <Col md={8}>
+                                                                    <h2 className="blog-title"><b>{blog.title.toUpperCase()} {blog.category.toUpperCase()}</b></h2>
+                                                                    <br />
+                                                                    <p>{blog.description.slice(0,299)}...</p>
+                                                                    <Button bsSize="large" className="blog-button"><NavLink to={`blogs/${blog.id}`}>READ MORE</NavLink></Button>
+                                                                </Col>
+                                                            </Row>
+                                                        </Grid>
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+                            </Slider>
+                        </Col>
+                        <Col md={1}>
+                        </Col>
+                    </Row>
+                </Grid>
                 <div className="text-center arrow-container">
                 <img style={{height: 50, width: 50, cursor: 'pointer', marginRight: 10}} src={require("./pictures/left_arrow.png")}  onClick={this.previous}/>
                 <img style={{height: 50, width: 50, cursor: 'pointer'}} src={require("./pictures/right_arrow.png")}  onClick={this.next}/>
+                </div>
             </div>
-        </div>
 
                 <Footer />
             </div>

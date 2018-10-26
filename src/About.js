@@ -22,16 +22,15 @@ export default class About extends Component {
                             <Col md={8}>
                                 <p className="about-container">
                                 {`
-                                Thanks for visiting my site! I am a photographer in Stockton, California. I grew up in Stockton, but went to college in Chico at California State University Chico.
+                                Thanks for visiting my site! I am a photographer from Stockton, CA, born and raised, and I attended California State University, Chico for my undergraduate studies.
 
-                                My vision to come back to Stockton was to help make a change in those who serve & live in this community. I believe you are not a product of your environment. So I am here to showcase the beauty Stockton has to offer through the photography that I do!
-
-                                I am also available for travel if you are not in this area. 
-
-                                My passion for photography began when my parents bought me my first polaroid camera back in the third grade. I would also take it everywhere with me capturing fieldtrips, family, pets and all things around me. I love the joy it brought me in capturing moments to relive over & over again.
-
-                                I am a natural light photographer. I enjoy capturing the love between couples & families. It is my goal to make you feel happy & comfortable during your session.  
-                                `}<br />
+                                My passion for photography began when my parents bought me my first polaroid camera back in the third grade. I took it everywhere with me, capturing fieldtrips, family, pets and all things around me. I love the joy it brought me in capturing moments to relive over & over again.
+                                
+                                I decided to come back to Stockton due to my vision of giving back and making a change alongside those who serve & live in this community. I believe you are not a product of your environment, so I am here to showcase the beauty Stockton has to offer through the photography that I do!
+                                
+                                I am a natural light photographer, I enjoy capturing the love between couples & families and I aspire to make you feel happy & comfortable during your session. 
+                                
+                                I am also available for travel if you are not in this area.`}<br />
                                 <br />
                                 <div><NavLink exact to="/Contact">Contact me</NavLink> for your next photo session!</div>
                                 </p>

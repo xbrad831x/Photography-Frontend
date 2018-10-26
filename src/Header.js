@@ -12,7 +12,7 @@ export default class Header extends Component {
         this.toggleInvestment = this.toggleInvestment.bind(this);
         this.state = {
           dropdownOpenGallery: false,
-          dropdownOpenInvestment: false
+          dropdownOpenInvestment: false,
         };
       }
 
@@ -34,15 +34,16 @@ export default class Header extends Component {
             <Grid fluid={true} >
                  <Row style={{textAlign: 'center', marginTop: 20}}>
                     <Col md={2}>
-                        <Image className="logo-pic" src={require("./pictures/Simplest_Logo.png")} responsive/>
+                        <Image className="logo-pic" src={require("./pictures/Simplest_Logo.png")}/>
                     </Col>
-                    <Col md={8} className="nav-middle">
-                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <Col md={8}>
+                        <div className="nav-middle" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <div className="container">
                                 <div className="row seven-cols" style={{fontSize: 12}}>
-                                    <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1"><NavLink exact style={{color: 'black'}} to="/">HOME</NavLink></div>
-                                    <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1"><NavLink exact style={{color: 'black'}} to="/About">ABOUT</NavLink></div>
-                                    <div className="col-md-1" style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}}>
+                                    <div className="col-md-1 home-link nav-items-container"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/">HOME</NavLink></div>
+                                    <div className="col-md-1 home-link nav-items-container"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/About">ABOUT</NavLink></div>
+                                    <div className="col-md-1 home-link nav-items-container">
+                                    <img className="arrow-header" src={require('./pictures/down_arrow.png')}></img>
                                     <Dropdown className="gallery" isOpen={this.state.dropdownOpenGallery} toggle={this.toggleGallery}>
                                         <DropdownToggle
                                         tag="div"
@@ -63,9 +64,10 @@ export default class Header extends Component {
                                         </DropdownMenu>
                                      </Dropdown>
                                     </div>
-                                    <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1"><NavLink exact style={{color: 'black'}} to="/Reviews">REVIEWS</NavLink></div>
-                                    <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1">
+                                    <div className="col-md-1 home-link nav-items-container"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/Reviews">REVIEWS</NavLink></div>
+                                    <div className="col-md-1 home-link nav-items-container">
                                     <Dropdown className="gallery" isOpen={this.state.dropdownOpenInvestment} toggle={this.toggleInvestment}>
+                                    <img className="arrow-header" src={require('./pictures/down_arrow.png')}></img>
                                         <DropdownToggle
                                         tag="div"
                                         onClick={this.toggleInvestment}
@@ -83,14 +85,14 @@ export default class Header extends Component {
                                         </DropdownMenu>
                                      </Dropdown>
                                     </div>
-                                    <div style={{borderRightColor: 'lightgray', borderRightStyle: 'solid', borderRightWidth: 2}} className="col-md-1"><NavLink exact style={{color: 'black'}} to="/Contact">CONTACT</NavLink></div>
-                                    <div className="col-md-1"><NavLink exact style={{color: 'black'}} to="/Blog">BLOG</NavLink></div>
+                                    <div className="col-md-1 home-link nav-items-container"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/Contact">CONTACT</NavLink></div>
+                                    <div className="col-md-1 home-link"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/Blog">BLOG</NavLink></div>
                                 </div>
                             </div>
                         </div>
                     </Col>
                     <Col md={2}>
-                        <div style={{height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 12 }}>
+                        <div className="social-media-container">
                             FOLLOW ALONG
                             <a target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/donnacphotography"><img style={{height: 20, width:20, marginLeft: 10}} src={require("./F_Logo_Online_09_2018/Black/PNG/flogo-RGB-HEX-Blk-58.png")} /></a>
                             <a target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/donnachoeun"><img style={{height: 20, width:20, marginLeft: 10}} src={require("./GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png")}/></a>

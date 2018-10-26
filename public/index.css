@@ -1,8 +1,9 @@
 html, body {
-    width: 100%;
-    background-image: url(./pictures/gray.jpg);
-    background-size: 100% 100%;
-    font-size: 15px !important;
+    background: url(./pictures/gray.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @font-face {
@@ -40,20 +41,13 @@ h4 {
 .logo-pic {
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .nav-container {
     font-family: 'CenturyGothic';
     margin-bottom: -20px;
-}
-
-.nav-middle {
-    border-right-style: solid;
-    border-right-color: lightgray;
-    border-right-width: 2px;
-    border-left-style: solid;
-    border-left-color: lightgray;
-    border-left-width: 2px
 }
 
 .footer-container {
@@ -70,10 +64,6 @@ h4 {
     margin-top: 20px;
 }
 
-.gallery-slider-container {
-    
-}
-
 .pic-review-container {
     float: left; 
     height: 400px;
@@ -81,22 +71,27 @@ h4 {
     position: relative;
 }
 
+.blog-button {
+    margin-bottom: 10px;
+    background-color: lightgray;
+    float: right;
+}
+
+.blog-button a {
+    color: black;
+}
+
 .blog-pic-container {
     position: relative;
     background-color: white;
+    font-family: CenturyGothic;
 }
 
 .blog-title {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 90%;
     font-family: CenturyGothic;
 }
 
 .blog-category {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 90%;
     font-family: CenturyGothic;
 }
 
@@ -105,9 +100,8 @@ h4 {
 }
 
 .pic-blog {
-    height: 400px;
+    height: auto;
     width: 100%;
-    opacity: 0.4;
 }
 
 .stella-font {
@@ -138,6 +132,56 @@ span {
     margin-left: 5px;
     margin-right: 5px;
     color: gray;
+}
+
+
+@media (min-width: 0px) and (max-width: 992px) {
+    .arrow-header {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+    .social-media-container {
+        font-family: CenturyGothic;
+        font-size: 12px;
+        margin-top: 35px;
+    }
+
+    .arrow-header {
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: hidden;
+        display: block;
+    }
+
+    .home-link:hover .arrow-header{
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;   
+        display: block; 
+    }
+
+    .nav-middle {
+        border-right-style: solid;
+        border-right-color: lightgray;
+        border-right-width: 2px;
+        border-left-style: solid;
+        border-left-color: lightgray;
+        border-left-width: 2px;
+        margin-top: 20px;
+    }
+    
+    .nav-items-container {
+        border-right-color: lightgray;
+        border-right-style: solid; 
+        border-right-width: 2px;
+    }
 }
 
 @media (min-width: 768px) {
