@@ -40,20 +40,20 @@ export default class BlogDetail extends Component {
                         <h3>{this.state.blog.title}</h3>
                         <Image style={{marginLeft: 'auto', marginRight: 'auto'}} src={require('./pictures/Shipping_divider.png')} responsive/>
                         <div className="blog-pic-container text-center">
-                                                        <Grid style={{width: '100%'}}>
-                                                            <Row>
-                                                                <Col md={4}>
-                                                                    <div className="blog-image-container">
-                                                                        <img className="pic-blog" src={this.state.blog.image_url} />
-                                                                    </div>
-                                                                </Col>
-                                                                <Col md={8}>
-                                                                    <p>{`${this.state.blog.description}`}</p>
-                                                                    <Button bsSize="large" className="blog-button"><NavLink to="/Blog">BACK TO BLOG</NavLink></Button>
-                                                                </Col>
-                                                            </Row>
-                                                        </Grid>
-                                                    </div>
+                            <Grid style={{width: '100%'}}>
+                                <Row>
+                                    <Col md={4}>
+                                        <div className="blog-image-container">
+                                            <img className="pic-blog" src={this.state.blog.image_url} />
+                                        </div>
+                                     </Col>
+                                    <Col md={8}>
+                                        <p>{`${this.state.blog.description}`}</p>
+                                        <NavLink to="/Blog"><Button bsSize="large" className="blog-button">BACK TO BLOG</Button></NavLink>
+                                    </Col>
+                                </Row>
+                            </Grid>
+                        </div>
                     </div>
                 </div>
 
