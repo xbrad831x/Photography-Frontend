@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import axios from 'axios';
+import { Button, Image, Grid, Row, Col } from 'react-bootstrap';
+import Footer from './Footer';
+import { NavLink } from 'react-router-dom';
 
 export default class BlogDetail extends Component {
 
@@ -8,14 +11,15 @@ export default class BlogDetail extends Component {
         super(props);
 
         this.state = {
-            blog: {}
+            blog: {},
+            id: this.props.match.params.id
         }
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/blogs')
+        axios.get(`https://donna-photography-api.herokuapp.com/api/blogs/${this.state.id}`)
                 .then(response => {
-
+                    console.log(response.data);
                     this.setState({blog: response.data})
                 })
                 .catch(error => {
@@ -31,8 +35,29 @@ export default class BlogDetail extends Component {
                 <Header />
 
                 <div className="background-container">
-
+                    <div className="blog-detail-container text-center">
+                        <h3>{this.state.blog.created_at}</h3>
+                        <h3>{this.state.blog.title}</h3>
+                        <Image style={{marginLeft: 'auto', marginRight: 'auto'}} src={require('./pictures/Shipping_divider.png')} responsive/>
+                        <div className="blog-pic-container text-center">
+                                                        <Grid style={{width: '100%'}}>
+                                                            <Row>
+                                                                <Col md={4}>
+                                                                    <div className="blog-image-container">
+                                                                        <img className="pic-blog" src={this.state.blog.image_url} />
+                                                                    </div>
+                                                                </Col>
+                                                                <Col md={8}>
+                                                                    <p>{`${this.state.blog.description}`}</p>
+                                                                    <Button bsSize="large" className="blog-button"><NavLink to="/Blog">BACK TO BLOG</NavLink></Button>
+                                                                </Col>
+                                                            </Row>
+                                                        </Grid>
+                                                    </div>
+                    </div>
                 </div>
+
+                <Footer />
 
             </div>
         );

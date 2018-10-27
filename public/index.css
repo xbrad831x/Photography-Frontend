@@ -16,6 +16,10 @@ html, body {
     src: url(Stella-Wilson.ttf);
 }
 
+p {
+    white-space: pre-line;
+}
+
 h4 {
     font-family: 'CenturyGothic'
 }
@@ -79,6 +83,7 @@ h4 {
 
 .blog-button a {
     color: black;
+    font-size: 12px;
 }
 
 .blog-pic-container {
@@ -123,6 +128,15 @@ h4 {
     margin-top: 20px;
 }
 
+.blog-detail-container {
+    background-color: white;
+    border-color: gray;
+    border-style: dashed;
+    border-width: 1px;
+    font-family: CenturyGothic;
+
+}
+
 .menu-container {
     background-image: url(./pictures/gray.jpg);
     padding: 15px;
@@ -149,6 +163,12 @@ span {
         font-family: CenturyGothic;
         font-size: 12px;
         margin-top: 35px;
+    }
+
+    .blog-detail-container {
+        background-color: white;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .arrow-header {
