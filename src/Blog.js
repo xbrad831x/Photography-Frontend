@@ -89,7 +89,7 @@ export default class Blog extends Component {
                                                                     </div>
                                                                 </Col>
                                                                 <Col md={8}>
-                                                                    <h2 className="blog-title"><b>{blog.title.toUpperCase()} {blog.category.toUpperCase()}</b></h2>
+                                                                    <h2 className="blog-title"><b>{blog.title.toUpperCase()}</b></h2>
                                                                     <br />
                                                                     <p>{`${blog.description.slice(0,299)}...`}</p>
                                                                     <NavLink to={`blogs/${blog.id}`}><Button bsSize="large" className="blog-button" >READ MORE</Button></NavLink>
