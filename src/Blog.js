@@ -43,10 +43,11 @@ export default class Blog extends Component {
             dots: false,
             infinite: true,
             speed: 500,
+            autoplaySpeed: 5000,
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
           }
 
           if(this.state.blogs.length == 0)
