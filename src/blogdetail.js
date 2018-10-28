@@ -29,6 +29,21 @@ export default class BlogDetail extends Component {
 
     render() {
 
+        if(this.state.blog.length == 0)
+        {
+            return (
+                <div>
+                    <Header />
+                    <div className="background-container">
+                    <div>Loading...</div>
+                    </div>
+                    <Footer />
+
+                </div>
+
+            );
+        }
+
         return (
             <div>
             
