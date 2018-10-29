@@ -43,7 +43,7 @@ export default class Gallery extends Component {
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             pauseOnHover: false
           }
 
