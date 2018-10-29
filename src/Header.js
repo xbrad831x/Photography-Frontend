@@ -32,12 +32,12 @@ export default class Header extends Component {
         return (
         <div className="nav-container">
             <Grid fluid={true} >
-                 <Row style={{textAlign: 'center', marginTop: 20}}>
+                 <Row className="row is-flex" style={{textAlign: 'center', marginTop: 20}}>
                     <Col md={2}>
                         <Image className="logo-pic" src={require("./pictures/Simplest_Logo.png")}/>
                     </Col>
                     <Col md={8}>
-                        <div className="nav-middle" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <div className="nav-middle">
                             <div className="container">
                                 <div className="row seven-cols" style={{fontSize: 12}}>
                                     <div className="col-md-1 home-link nav-items-container"><img className="arrow-header" src={require('./pictures/down_arrow.png')}></img><NavLink exact style={{color: 'black'}} to="/">HOME</NavLink></div>

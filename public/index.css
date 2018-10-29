@@ -154,7 +154,6 @@ span {
     background-repeat: no-repeat;
 }
 
-
 @media (min-width: 0px) and (max-width: 992px) {
     .arrow-header {
         display: none;
@@ -164,11 +163,22 @@ span {
 }
 
 @media (min-width: 992px) {
+    .row.is-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row.is-flex > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
 
     .social-media-container {
         font-family: CenturyGothic;
         font-size: 12px;
-        margin-top: 35px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     .blog-detail-container {
@@ -200,7 +210,10 @@ span {
         border-left-style: solid;
         border-left-color: lightgray;
         border-left-width: 2px;
-        margin-top: 20px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     
     .nav-items-container {
