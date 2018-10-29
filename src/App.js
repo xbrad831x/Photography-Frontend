@@ -68,7 +68,11 @@ componentDidMount() {
            <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
                       {this.state.homepics.map(homepic => {
                           return (
-                              <img src={homepic.image_url} />
+                            <div>
+                            <div>
+                                <div className="gallery-pic" style={{backgroundImage: `url("${homepic.image_url}")`}}></div>
+                            </div>
+                        </div>
                           );
                     })}
           </Slider>

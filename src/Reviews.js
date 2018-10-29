@@ -63,9 +63,9 @@ export default class Review extends Component {
                 <div className="slider-review-container">
                     <Grid>
                         <Row>
-                        <Col md={2}>
+                        <Col sm={3} md={2}>
                         </Col>
-                        <Col md={8}>
+                        <Col sm={6} md={8}>
                         <Slider {...settingsPictures}>
                             {this.state.reviews.map(review => {
                                 return (
@@ -84,7 +84,7 @@ export default class Review extends Component {
                             })}
                         </Slider>
                         </Col>
-                        <Col md={2}>
+                        <Col sm={3} md={2}>
                         </Col>
                         </Row>
                     </Grid>
