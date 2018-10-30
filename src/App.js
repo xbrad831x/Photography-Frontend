@@ -38,11 +38,59 @@ componentDidMount() {
       infinite: true,
       speed: 500,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      slide: 'img',
-      pauseOnHover: false
+      pauseOnHover: false,
+      centerMode: true,
+      variableHeight: true,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows: false,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              autoplay: true,
+              pauseOnHover: false,
+              centerMode: true,
+              variableHeight: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows: false,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              pauseOnHover: false,
+              centerMode: true,
+              variableHeight: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              pauseOnHover: false,
+              centerMode: false,
+              variableHeight: true,
+            }
+          }
+        ]
     }
 
     if(this.state.homepics.length == 0)

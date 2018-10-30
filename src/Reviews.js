@@ -72,7 +72,7 @@ export default class Review extends Component {
                                     <div>
                                         <img src={review.image_url} className="pic-review-container" />
                                         <div>
-                                            <div style={{fontSize: 15}}>
+                                            <div className="review-text">
                                                 <b>"</b>{review.description}<b>"</b>
                                             </div>
                                             <div style={{fontSize: 20, marginBottom: 0}} className="pull-right">

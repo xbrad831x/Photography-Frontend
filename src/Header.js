@@ -56,6 +56,7 @@ export default class Header extends Component {
                                         <DropdownMenu persist={true} className="menu-container">
                                                 <div><NavLink exact style={{color: 'black'}} to="/galleries/HEADSHOTS">HEADSHOTS</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/galleries/SENIORS">SENIORS</NavLink></div>
+                                                <div><NavLink exact style={{color: 'black'}} to="/galleries/FAMILY">FAMILY</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/galleries/EVENTS">EVENTS</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/galleries/MATERNITY">MATERNITY</NavLink></div>
                                                 <div><NavLink exact style={{color: 'black'}} to="/galleries/COUPLES">COUPLES</NavLink></div>

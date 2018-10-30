@@ -16,7 +16,7 @@ export default class About extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://donna-photography-api.herokuapp.com/api/about')
+        axios.get('http://localhost:8000/api/about')
                 .then(response => {
 
                     this.setState({about: response.data})
@@ -62,8 +62,6 @@ export default class About extends Component {
                                 <p>
                                 {`${this.state.about[0].description}`}
                                 </p>
-                                <br />
-                                <br />
                                 <div><NavLink exact to="/Contact">Contact me</NavLink> for your next photo session!</div>
                                 </div>
                             </Col>

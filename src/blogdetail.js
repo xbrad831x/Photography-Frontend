@@ -53,7 +53,7 @@ export default class BlogDetail extends Component {
                     <div className="blog-detail-container text-center">
                         <h3>{this.state.blog.created_at}</h3>
                         <h3>{this.state.blog.title}</h3>
-                        <Image style={{marginLeft: 'auto', marginRight: 'auto'}} src={require('./pictures/Shipping_divider.png')} responsive/>
+                        <Image className="arrow-heart-pic" src={require('./pictures/Shipping_divider.png')} responsive/>
                         <div className="blog-pic-container text-center">
                             <Grid style={{width: '100%'}}>
                                 <Row>

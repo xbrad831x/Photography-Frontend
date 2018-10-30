@@ -41,10 +41,59 @@ export default class Gallery extends Component {
             infinite: true,
             speed: 500,
             arrows: false,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
-            pauseOnHover: false
+            pauseOnHover: false,
+            centerMode: true,
+            variableHeight: true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    pauseOnHover: false,
+                    centerMode: true,
+                    variableHeight: true,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    pauseOnHover: false,
+                    centerMode: true,
+                    variableHeight: true,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    pauseOnHover: false,
+                    centerMode: false,
+                    variableHeight: true,
+                  }
+                }
+              ]
           }
 
         if(this.state.galleries.length == 0)
@@ -68,11 +117,7 @@ export default class Gallery extends Component {
                 <Header />
                 <div className="background-container">
                 <h1 className="stella-font text-center">{this.props.match.params.gallery.toLowerCase()}</h1>
-                <Grid>
-                    <Row>
-                        <Col md={2}>
-                        </Col>
-                        <Col md={8}>
+              
                 <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
                     {this.state.galleries.map(gallery => {
                         if(this.props.match.params.gallery.toLowerCase() == gallery.gallery)
@@ -87,11 +132,7 @@ export default class Gallery extends Component {
                         }
                     })}
                 </Slider>
-                </Col>
-                <Col md={2}>
-                </Col>
-                    </Row>
-                </Grid>
+             
                 </div>
                 
                 <Footer />

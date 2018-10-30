@@ -136,6 +136,11 @@ h4 {
 
 }
 
+.review-text {
+    font-size: 15px;
+    font-family: CenturyGothic;
+}
+
 .menu-container {
     background-image: url(./pictures/gray.jpg);
     padding: 15px;
@@ -154,6 +159,11 @@ span {
     background-repeat: no-repeat;
 }
 
+.arrow-heart-pic {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 0px) and (max-width: 992px) {
     .arrow-header {
         display: none;
@@ -170,6 +180,12 @@ span {
     .row.is-flex > [class*='col-'] {
         display: flex;
         flex-direction: column;
+    }
+
+    .arrow-heart-pic {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
     }
 
     .social-media-container {
