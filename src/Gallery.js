@@ -46,7 +46,7 @@ export default class Gallery extends Component {
             autoplay: true,
             pauseOnHover: false,
             centerMode: true,
-            variableWidth: true,
+            variableHeight: true,
             responsive: [
                 {
                   breakpoint: 1024,
@@ -60,7 +60,7 @@ export default class Gallery extends Component {
                     autoplay: true,
                     pauseOnHover: false,
                     centerMode: true,
-                    variableWidth: true,
+                    variableHeight: true,
                   }
                 },
                 {
@@ -75,7 +75,7 @@ export default class Gallery extends Component {
                     autoplay: true,
                     pauseOnHover: false,
                     centerMode: true,
-                    variableWidth: true,
+                    variableHeight: true,
                   }
                 },
                 {
@@ -90,7 +90,7 @@ export default class Gallery extends Component {
                     autoplay: true,
                     pauseOnHover: false,
                     centerMode: false,
-                    variableWidth: true,
+                    variableHeight: true,
                   }
                 }
               ]
