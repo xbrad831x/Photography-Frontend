@@ -16,7 +16,7 @@ export default class About extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/about')
+        axios.get('https://donna-photography-api.herokuapp.com/api/about')
                 .then(response => {
 
                     this.setState({about: response.data})
@@ -48,17 +48,16 @@ export default class About extends Component {
                 <Header />
 
                 <div className="background-container">
-                    <Grid>
+                    <Grid className="about-container">
                         <Row>
                             <Col md={4}>
                                 <Image src={require("./pictures/About_pic.jpg")} 
-                                        style={{   float: 'left', 
-                                                margin: 20, position: 'relative'}} 
+                                        className="about-pic"
                                         responsive={true}/>
                             </Col>
                             <Col md={8}>
                                 <br />
-                                <div className="about-container">
+                                <div className="about-container-text">
                                 <p>
                                 {`${this.state.about[0].description}`}
                                 </p>

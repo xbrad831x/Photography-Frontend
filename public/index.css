@@ -36,6 +36,10 @@ h4 {
 }
 
 .about-container {
+    margin-top: 5%;
+}
+
+.about-container-text {
     font-family: 'CenturyGothic';
     white-space: pre-line;
     margin: 0px 20px 20px 20px;
@@ -182,6 +186,12 @@ span {
         flex-direction: column;
     }
 
+    .about-pic {
+        float: left;
+        margin: 20px;
+        position: relative;
+    }
+
     .arrow-heart-pic {
         margin-left: auto;
         margin-right: auto;
@@ -252,6 +262,7 @@ span {
         background-position: center;
         background-repeat: no-repeat;
     }
+
   }
   
   @media (min-width: 992px) {
