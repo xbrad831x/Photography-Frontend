@@ -51,8 +51,15 @@ export default class Gallery extends Component {
                 {
                     breakpoint: 480,
                     settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1
+                        dots: false,
+                        infinite: true,
+                        speed: 500,
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        pauseOnHover: false,
+                        variableWidth: true,
                     }
             ]
           }
