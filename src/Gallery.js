@@ -41,12 +41,14 @@ export default class Gallery extends Component {
             infinite: true,
             speed: 500,
             arrows: false,
-            slidesToShow: 3,
+            centerPadding: '0px',
+            slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
             pauseOnHover: false,
             centerMode: true,
-            variableHeight: true,
+            variableWidth: true,
+            slide: 'img',
             responsive: [
                 {
                   breakpoint: 1024,
@@ -55,12 +57,12 @@ export default class Gallery extends Component {
                     infinite: true,
                     speed: 500,
                     arrows: false,
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     pauseOnHover: false,
-                    centerMode: false,
-                    variableHeight: true,
+                    centerMode: true,
+                    variableWidth: true,
                   }
                 },
                 {
@@ -70,12 +72,10 @@ export default class Gallery extends Component {
                     infinite: true,
                     speed: 500,
                     arrows: false,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     pauseOnHover: false,
-                    centerMode: false,
-                    variableHeight: true,
                   }
                 },
                 {
@@ -89,8 +89,6 @@ export default class Gallery extends Component {
                     slidesToScroll: 1,
                     autoplay: true,
                     pauseOnHover: false,
-                    centerMode: false,
-                    variableHeight: true,
                   }
                 }
               ]
@@ -122,10 +120,26 @@ export default class Gallery extends Component {
                     {this.state.galleries.map(gallery => {
                         if(this.props.match.params.gallery.toLowerCase() == gallery.gallery)
                         {
+                            let width;
+
+                            if(gallery.orientation == "landscape")
+                            {
+                                width = '600px';
+
+                            }
+                            else
+                            {
+                                width = '300px';
+
+                            }
+
+                            console.log(width);
+
+
                             return (
                                 <div>
                                     <div>
-                                        <div className="gallery-pic" style={{backgroundImage: `url("${gallery.image_url}")`}}></div>
+                                    <img className="gallery-pic" style={{backgroundImage: `url("${gallery.image_url}")`, width: width}} />
                                     </div>
                                 </div>
                             );

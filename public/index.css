@@ -35,6 +35,10 @@ h4 {
     font-family: 'CenturyGothic';
 }
 
+.gallery-slider-container {
+    height: 600px;
+}
+
 .about-container {
     margin-top: 5%;
 }
@@ -86,7 +90,7 @@ h4 {
 
 .blog-button a {
     color: black;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .blog-pic-container {
@@ -158,7 +162,7 @@ span {
 
 .gallery-pic {
     height: 300px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -247,6 +251,13 @@ span {
         border-right-style: solid; 
         border-right-width: 2px;
     }
+
+    .gallery-pic {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 @media (min-width: 768px) {
@@ -254,13 +265,6 @@ span {
     .seven-cols .col-sm-1,
     .seven-cols .col-lg-1  {
       width: 100%;
-    }
-
-    .gallery-pic {
-        height: 900px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
   }
