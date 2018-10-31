@@ -41,14 +41,12 @@ export default class Gallery extends Component {
             infinite: true,
             speed: 500,
             arrows: false,
-            centerPadding: '0px',
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
             pauseOnHover: false,
             centerMode: true,
             variableWidth: true,
-            slide: 'img',
             responsive: [
                 {
                   breakpoint: 1024,
@@ -139,7 +137,7 @@ export default class Gallery extends Component {
                             return (
                                 <div>
                                     <div>
-                                    <img className="gallery-pic" style={{backgroundImage: `url("${gallery.image_url}")`, width: width}} />
+                                    <div className="gallery-pic" style={{backgroundImage: `url("${gallery.image_url}")`, width: width}}></div>
                                     </div>
                                 </div>
                             );
