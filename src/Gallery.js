@@ -47,49 +47,6 @@ export default class Gallery extends Component {
             pauseOnHover: false,
             centerMode: true,
             variableWidth: true,
-            responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    pauseOnHover: false,
-                    centerMode: true,
-                    variableWidth: true,
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    pauseOnHover: false,
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    pauseOnHover: false,
-                  }
-                }
-              ]
           }
 
         if(this.state.galleries.length == 0)
