@@ -11,19 +11,33 @@ export default class Gallery extends Component {
         super(props);
         this.next = this.next.bind(this);
         this.previous = this.previous.bind(this);
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
         this.state = {
-            galleries: []
+            galleries: [],
+            width: 0,
         }
 
     }
 
     componentDidMount() {
+
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+
         axios.get('https://donna-photography-api.herokuapp.com/api/galleries')
             .then(res => {
                 this.setState({galleries: res.data})
             })
     }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+      }
 
     next() {
         this.slider.slickNext();
@@ -45,7 +59,7 @@ export default class Gallery extends Component {
             slidesToScroll: 1,
             autoplay: true,
             pauseOnHover: false,
-            centerMode: true,
+            centerMode: false,
             variableWidth: true,
             responsive: [
                 {
@@ -59,6 +73,7 @@ export default class Gallery extends Component {
                         slidesToScroll: 1,
                         autoplay: true,
                         pauseOnHover: false,
+                        variableWidth: false
                     },
                 }
             ]
@@ -91,6 +106,17 @@ export default class Gallery extends Component {
                         if(this.props.match.params.gallery.toLowerCase() == gallery.gallery)
                         {
                             let width;
+
+                            if(this.state.width < 500)
+                            {
+                                return (
+                                    <div>
+                                        <div>
+                                        <div className="gallery-pic" style={{backgroundImage: `url("${gallery.image_url}")`}}></div>
+                                        </div>
+                                    </div>
+                                );
+                            }
 
                             if(gallery.orientation == "landscape")
                             {
