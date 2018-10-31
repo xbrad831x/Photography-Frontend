@@ -19,6 +19,7 @@ class App extends Component {
 }
 
 componentDidMount() {
+
   this.updateWindowDimensions();
   window.addEventListener('resize', this.updateWindowDimensions);
 
@@ -97,40 +98,37 @@ updateWindowDimensions() {
         <div className="background-container">
            <Slider className="gallery-slider-container" {...settingsPictures} ref={slider => (this.slider = slider)}>
                       {this.state.homepics.map(homepic => {
-                          if(this.props.match.params.gallery.toLowerCase() == homepic.gallery)
+                          let width;
+
+                          if(this.state.width < 500)
                           {
-                              let width;
-  
-                              if(this.state.width < 500)
-                              {
-                                  return (
-                                      <div>
-                                          <div>
-                                          <div className="gallery-pic" style={{backgroundImage: `url("${homepic.image_url}")`}}></div>
-                                          </div>
-                                      </div>
-                                  );
-                              }
-  
-                              if(gallery.orientation == "landscape")
-                              {
-                                  width = '1066px';
-  
-                              }
-                              else
-                              {
-                                  width = '533px';
-  
-                              }
-  
                               return (
                                   <div>
                                       <div>
-                                      <div className="gallery-pic" style={{backgroundImage: `url("${homepic.image_url}")`, width: width}}></div>
+                                      <div className="gallery-pic" style={{backgroundImage: `url("${homepic.image_url}")`}}></div>
                                       </div>
                                   </div>
                               );
                           }
+
+                          if(homepic.orientation == "landscape")
+                          {
+                              width = '1066px';
+
+                          }
+                          else
+                          {
+                              width = '533px';
+
+                          }
+
+                          return (
+                              <div>
+                                  <div>
+                                  <div className="gallery-pic" style={{backgroundImage: `url("${homepic.image_url}")`, width: width}}></div>
+                                  </div>
+                              </div>
+                          );
                     })}
           </Slider>
         </div>
