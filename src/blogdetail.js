@@ -68,7 +68,7 @@ export default class BlogDetail extends Component {
                                         <div>Check out their Online Gallery here:</div>
                                         <a style={{cursor: 'pointer'}} target="_blank" rel="noopener noreferrer" href={this.state.blog.passgallery_url}>{this.state.blog.passgallery_url}</a>
                                         <br />
-                                        <NavLink to="/Blog"><Button bsSize="large" className="blog-button">BACK TO BLOG</Button></NavLink>
+                                        <NavLink to="/Blog"><Button className="blog-button">BACK TO BLOG</Button></NavLink>
                                     </Col>
                                 </Row>
                             </Grid>
