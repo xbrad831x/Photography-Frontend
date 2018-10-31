@@ -120,7 +120,7 @@ export default class Gallery extends Component {
 
                             if(gallery.orientation == "landscape")
                             {
-                                width = '1200px';
+                                width = '1066px';
 
                             }
                             else
