@@ -59,7 +59,6 @@ export default class Gallery extends Component {
                         slidesToScroll: 1,
                         autoplay: true,
                         pauseOnHover: false,
-                        variableWidth: true,
                     }
             ]
           }
