@@ -47,6 +47,14 @@ export default class Gallery extends Component {
             pauseOnHover: false,
             centerMode: true,
             variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+            ]
           }
 
         if(this.state.galleries.length == 0)
@@ -87,9 +95,6 @@ export default class Gallery extends Component {
                                 width = '300px';
 
                             }
-
-                            console.log(width);
-
 
                             return (
                                 <div>
