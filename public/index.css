@@ -161,7 +161,8 @@ span {
 }
 
 .gallery-pic {
-    height: 600px;
+    height: auto;
+    width: auto;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
