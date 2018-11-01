@@ -89,11 +89,11 @@ export default class Blog extends Component {
                                                                     </div>
                                                                 </Col>
                                                                 <Col md={8}>
-                                                                    <h2 className="blog-title"><b>{blog.title.toUpperCase()}</b></h2>
+                                                                    <h4 className="blog-title"><b>{blog.title.toUpperCase()}</b></h4>
                                                                     <br />
                                                                     <p>{`${blog.description.slice(0,299)}...`}</p>
-                                                                    <NavLink to={`blogs/${blog.id}`}><Button className="blog-button" >READ MORE</Button></NavLink>
                                                                 </Col>
+                                                                <NavLink to={`blogs/${blog.id}`}><Button className="blog-button" >READ MORE</Button></NavLink>
                                                             </Row>
                                                         </Grid>
                                                     </div>

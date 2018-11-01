@@ -20,7 +20,7 @@ p {
     white-space: pre-line;
 }
 
-h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'CenturyGothic'
 }
 
@@ -85,7 +85,6 @@ h4 {
 .blog-button {
     margin-bottom: 10px;
     background-color: lightgray;
-    float: right;
 }
 
 .blog-button a {
@@ -177,6 +176,16 @@ span {
         display: none;
     }
 
+    .indiv-investment {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom-style: solid;
+        border-bottom-color: lightgray;
+        border-bottom-width: 1px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
 
 }
 
@@ -188,6 +197,16 @@ span {
     .row.is-flex > [class*='col-'] {
         display: flex;
         flex-direction: column;
+    }
+
+    .blog-button {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: lightgray;
+        float: right;
+        bottom: 0;
+        right: 0;
+        position: absolute;
     }
 
     .about-pic {

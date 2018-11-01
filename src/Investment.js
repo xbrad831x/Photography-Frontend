@@ -86,7 +86,7 @@ export default class Investments extends Component {
                 <Grid>
                     <Row>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package One</b></div>
                                 <br />
                                 <div>Event Coverage</div>
@@ -98,7 +98,7 @@ export default class Investments extends Component {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package Two</b></div>
                                 <br />
                                 <div>Event Coverage</div>
@@ -110,7 +110,7 @@ export default class Investments extends Component {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package Three</b></div>
                                 <br />
                                 <div>Event Coverage</div>
@@ -134,7 +134,7 @@ export default class Investments extends Component {
             <Grid>
                 <Row>
                     <Col md={4}>
-                        <div className="text-center">
+                        <div className="indiv-investment text-center">
                             <div><b>Package One</b></div>
                             <br />
                             <div>1 Person</div>
@@ -147,7 +147,7 @@ export default class Investments extends Component {
                         </div>
                     </Col>
                     <Col md={4}>
-                        <div className="text-center">
+                        <div className="indiv-investment text-center">
                             <div><b>Package Two</b></div>
                             <br />
                             <div>1-3 Person(s)</div>
@@ -160,7 +160,7 @@ export default class Investments extends Component {
                         </div>
                     </Col>
                     <Col md={4}>
-                        <div className="text-center">
+                        <div className="indiv-investment text-center">
                             <div><b>Package Three</b></div>
                             <br />
                             <div>1-6 Person(s)</div>
@@ -181,7 +181,7 @@ export default class Investments extends Component {
                 <Grid>
                     <Row>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package One</b></div>
                                 <br />
                                 <div>Ceremony Coverage &</div>
@@ -195,7 +195,7 @@ export default class Investments extends Component {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package Two</b></div>
                                 <br />
                                 <div>Pre-Wedding Coverage &</div>
@@ -209,7 +209,7 @@ export default class Investments extends Component {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className="text-center">
+                            <div className="indiv-investment text-center">
                                 <div><b>Package Three</b></div>
                                 <br />
                                 <div>ALL DAY COVERAGE</div>
