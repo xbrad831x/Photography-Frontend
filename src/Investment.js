@@ -10,12 +10,19 @@ export default class Investments extends Component {
     constructor(props) {
         super(props);
 
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
         this.state = {
-            prices: []
+            prices: [],
+            width: 0
         }
     }
 
     componentDidMount() {
+
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+
         axios.get('https://donna-photography-api.herokuapp.com/api/prices')
                 .then(response => {
 
@@ -26,7 +33,23 @@ export default class Investments extends Component {
                 })
     }
 
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+      }
+
     renderInvestment() {
+
+        let m = true;
+
+        if(this.state.width < 992)
+        {
+            m = false;
+        }
+
         switch(this.props.match.params.investment) {
             case 'Headshots':
                 return <Headshots />;
@@ -37,7 +60,7 @@ export default class Investments extends Component {
             case 'Portraits':
                 return <Portraits />;
             case 'Weddings':
-                return <Weddings />;
+                return <Weddings m={m}/>;
             default:
                 return <div></div>;
         }
@@ -176,7 +199,7 @@ export default class Investments extends Component {
             </Grid>
         );
         
-         Weddings = () => (
+         Weddings = props => (
             <div>
                 <Grid>
                     <Row>
@@ -216,9 +239,7 @@ export default class Investments extends Component {
                                 <div>All Digital Images</div>
                                 <div>1 Photographer</div>
                                 <br />
-                                <br />
-                                <br />
-                                <br />
+                                {props.m && <div><br /> <br /> <br /></div>}
                                 <div><b>${this.state.prices[0].weddingsPackageThree}</b></div>
                             </div>
                         </Col>

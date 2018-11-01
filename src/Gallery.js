@@ -3,7 +3,6 @@ import Header from './Header';
 import Slider from 'react-slick';
 import Footer from './Footer';
 import axios from 'axios';
-import { Grid, Row, Col } from 'react-bootstrap';
 
 export default class Gallery extends Component {
 
