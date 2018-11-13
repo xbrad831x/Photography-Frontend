@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Footer from './Footer';
 import axios from 'axios';
 
 let Headshots, Seniors, Events, Portraits, Weddings;
@@ -76,8 +75,6 @@ export default class Investments extends Component {
                     <div className="background-container">
                     <div>Loading...</div>
                     </div>
-                    <Footer />
-
                 </div>
 
             );
@@ -263,9 +260,7 @@ export default class Investments extends Component {
                 <br />
                 <div className="investment-container">{this.renderInvestment()}</div>
             </div>
-            
-            <Footer />
-
+        
             </div>
         );
     }

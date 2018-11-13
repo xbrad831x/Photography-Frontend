@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import axios from 'axios';
 import { Button, Image, Grid, Row, Col } from 'react-bootstrap';
-import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 export default class BlogDetail extends Component {
@@ -37,8 +36,6 @@ export default class BlogDetail extends Component {
                     <div className="background-container">
                     <div>Loading...</div>
                     </div>
-                    <Footer />
-
                 </div>
 
             );
@@ -75,8 +72,6 @@ export default class BlogDetail extends Component {
                         </div>
                     </div>
                 </div>
-
-                <Footer />
 
             </div>
         );

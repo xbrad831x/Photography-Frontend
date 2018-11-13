@@ -3,7 +3,6 @@ import Header from './Header';
 import { Grid, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import Slider from 'react-slick';
-import Footer from './Footer';
 
 export default class Review extends Component {
 
@@ -46,7 +45,6 @@ export default class Review extends Component {
                     <div>Loading...</div>
                     </div>
 
-                    <Footer />
                 </div>
             )
         }
@@ -90,8 +88,6 @@ export default class Review extends Component {
                     </Grid>
                 </div>
                 </div>
-
-                <Footer />
 
             </div>
         )

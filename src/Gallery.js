@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Slider from 'react-slick';
-import Footer from './Footer';
 import axios from 'axios';
 
 export default class Gallery extends Component {
@@ -87,8 +86,6 @@ export default class Gallery extends Component {
                     <h1 className="stella-font text-center">{this.props.match.params.gallery.toLowerCase()}</h1>
                     <div>Loading...</div>
                     </div>
-                    <Footer />
-
                 </div>
 
             );
@@ -140,9 +137,6 @@ export default class Gallery extends Component {
                 </Slider>
              
                 </div>
-                
-                <Footer />
-
 
             </div>
         );

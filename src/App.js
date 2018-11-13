@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Header from './Header';
-import Footer from './Footer';
 import axios from 'axios';
 
 class App extends Component {
@@ -83,9 +82,7 @@ updateWindowDimensions() {
                     <Header />
                     <div className="background-container">
                     <div>Loading...</div>
-                    </div>
-                    <Footer />
-
+                    </div> 
                 </div>
 
             );
@@ -132,8 +129,6 @@ updateWindowDimensions() {
                     })}
           </Slider>
         </div>
-        
-        <Footer />
 
       </div>
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import { Button, Grid, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-import Footer from './Footer';
 import Slider from 'react-slick';
 import { NavLink } from 'react-router-dom';
 
@@ -58,8 +57,6 @@ export default class Blog extends Component {
                     <div className="background-container">
                     <div>Loading...</div>
                     </div>
-                    <Footer />
-
                 </div>
 
             );
@@ -112,7 +109,6 @@ export default class Blog extends Component {
                 </div>
             </div>
 
-                <Footer />
             </div>
         );
     }

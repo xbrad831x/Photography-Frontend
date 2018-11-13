@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import { Button, Form, FormControl, FormGroup, ControlLabel, Grid, Row, Col, HelpBlock } from 'react-bootstrap';
-import Footer from './Footer';
 import axios from 'axios';
 
 export default class Contact extends Component {
@@ -142,9 +141,6 @@ export default class Contact extends Component {
                     </Row>
                 </Grid>
                 </div>
-
-                <Footer />
-
             </div>
         );
     }
